@@ -2,7 +2,7 @@ require 'nokogiri'
 require 'open-uri'
 
 require_relative './course.rb'
-
+require 'pry'
 class Scraper
   
     def print_courses
@@ -27,6 +27,7 @@ class Scraper
       course.schedule = post.css("date").text 
       course.description = post.css("p").text 
     end 
+    binding.pry
   end 
   
   def get_courses
