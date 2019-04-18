@@ -18,12 +18,12 @@ class Scraper
   
   def get_page 
     html = open("http://learn-co-curriculum.github.io/site-for-scraping/courses")
-    @flatiron = Nokogiri::HTML(html)
-    @flatiron
+    flatiron = Nokogiri::HTML(html)
+    flatiron
   end 
   
   def get_courses
-    @flatiron.css(".posts-holder")
+    flatiron.css(".posts-holder")
   end 
   
 end
