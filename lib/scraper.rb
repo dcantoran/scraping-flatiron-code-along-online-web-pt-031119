@@ -35,6 +35,3 @@ class Scraper
   
 end
 
-classes = Course.new 
-classes.get_courses
-
