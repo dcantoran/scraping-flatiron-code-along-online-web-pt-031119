@@ -18,6 +18,7 @@ class Scraper
   
   def get_page 
     
+    html = open("")
     flatiron = 
     
   end 
