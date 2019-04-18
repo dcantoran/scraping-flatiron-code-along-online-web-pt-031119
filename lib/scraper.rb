@@ -23,7 +23,7 @@ class Scraper
   end 
   
   def get_courses
-    
+    @flatiron.css(".")
   end 
   
 end
