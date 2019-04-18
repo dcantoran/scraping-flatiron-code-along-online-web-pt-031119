@@ -30,7 +30,7 @@ class Scraper
   end 
   
   def get_courses
-    @flatiron.css(".post")
+    self.get_page.css(".post")
   end 
   
 end
