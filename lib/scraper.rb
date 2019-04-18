@@ -16,6 +16,12 @@ class Scraper
     end
   end
   
+  def get_page 
+    
+    flatiron = 
+    
+  end 
+  
 end
 
 
