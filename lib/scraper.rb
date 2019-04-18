@@ -21,7 +21,7 @@ class Scraper
     @flatiron = Nokogiri::HTML(html)
     @flatiron
     
-    doc.css(".post").each do |post|
+    @flatiron.css(".post").each do |post|
       course = Course.new 
       course.title = post.css("h2").text
       course.schedule = post.css("date").text 
