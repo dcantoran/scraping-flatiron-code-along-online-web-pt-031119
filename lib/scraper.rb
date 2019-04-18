@@ -21,7 +21,7 @@ class Scraper
     @flatiron = Nokogiri::HTML(html)
     @flatiron
     
-    doc.css("")
+    doc.css(".post")
   end 
   
   def get_courses
